@@ -1,0 +1,39 @@
+<html>
+
+    <style>
+        .main-container {
+            border: 1px solid black;
+        }
+        .span-class {
+            color: red;
+        }
+
+        h1+div{
+            background: grey;
+            border: 2px solid grey;
+        }
+        h1+span{
+            background: green;
+        }
+        h2~div {
+            color: blue;
+        }
+    </style>
+    <body>
+        <div class="main-container">
+           <h1>item1 <span class="span-class">span</span></h1>
+           <div>
+               <h2>h2 header</h2>
+               <h3>h3 header</h3>
+               <div>div2</div>
+               <div>div3</div>
+           </div>
+            <div>
+                <h2>h22 header</h2>
+                <h3>h33 header</h3>
+                <div>div233</div>
+            </div>
+           <span>span value</span>
+        </div>
+    </body>
+</html>

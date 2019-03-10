@@ -1,0 +1,55 @@
+<html>
+    <style>
+        .div-1 {
+            border: 1px solid black;
+            padding 5px;
+        }
+
+        .div-1 > div {
+            border: 1px solid red;
+            padding: 2px;
+            margin 5px;
+        }
+
+        .div-1 > span {
+            border: 1px solid green;
+            padding: 2px;
+            margin 5px;
+        }
+        .main-list {
+            color: red;
+        }
+        .main-list > li {
+            color: green;
+        }
+        .main-list > li > ul > li{
+            color: blue;
+        }
+    </style>
+    <body>
+        <ul>
+            <li>item 1</li>
+            <li>item 2</li>
+            <li>item 3</li>
+        </ul>
+
+        <ul class="main-list">
+            <li>item 1</li>
+            <li>item 2</li>
+            <li>item 3
+                <ul>
+                    <li>item 31</li>
+                    <li>item 32</li>
+                </ul>
+            </li>
+        </ul>
+        <div class="div-1">
+            <div>div-1</div>
+            <div>
+                div-2
+                <div>aaaa</div>
+            </div>
+            <span>span11</span>
+        </div>
+    </body>
+</html>
